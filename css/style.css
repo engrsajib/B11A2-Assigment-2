@@ -3,31 +3,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
-
 .container {
     margin: 20px 141px;
 }
-
 .nav-link ul {
     gap: 32px;
 }
-
 .text-primary {
     font-family: sans-serif;
     font-size: 16px;
     text-decoration: none;
 }
-
 .school-logo {
     gap: 12px
 }
-
 ul li {
     list-style: none;
 }
-
 .button-style {
     padding: 10px 60px;
     font-size: 20px;
@@ -35,36 +28,25 @@ ul li {
     border: none;
     text-decoration: none;
 }
-
 .btn-contact {
     color: white;
     background-color: orange;
 }
-
-.btn-enroll,
 .btn-view {
     color: white;
     background-color: black;
 }
-
-
 .banner-text {
     margin: 122px 0px;
 }
-
 .banner-image {
     margin-left: 50px;
-
 }
-
 .curriculum {
     background-image: url(/images/bg.png);
     margin: 0px 140px;
     padding-top: 50px;
 }
-
-
-
 .curriculum-card {
     text-align: center;
     padding-top: 60px;
@@ -73,8 +55,6 @@ ul li {
 .curriculum-card p{
     padding-inline: 40px;
 }
-
-
 .curriculum-card-1 {
     background: linear-gradient(to bottom,#DEF5FF, white);
     border-radius: 18px;
@@ -91,78 +71,89 @@ ul li {
     border-radius: 18px;
     padding: 50px 40px;
 }
-
-
 .arrow {
     text-align: center;
     margin-bottom: 60px;
 }
-
 .fas {
     background-color: orange;
     padding: 10px;
     border-radius: 50%;
 }
-
 .our-story {
+    overflow: hidden;
     background-image: url(/images/bg.png);
     background: linear-gradient(to bottom, white, #FEA301);
 }
-
-.collum-1 {
+.collum-1 .card .card-content { 
+    padding-bottom: 30px;
+}
+.card{
     background-color: white;
     border-radius: 16px;
-    
 }
-
+.card img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.card .card-content{
+    padding: 0 35px;
+}
 .collum-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px
 }
-
 .grid-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-
 h3 {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
 }
-
-
 footer {
     background-color: #01ACFD;
     color: white;
-
 }
-
 .footer-container {
+    align-items: flex-start;
     padding: 140px 228px 123px 174px;
-
 }
-
 .footer-1 {
     max-width: 400px;
 }
-
 .footer-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
-
 .footer-link ul li a {
     color: white;
     text-decoration: none;
-
 }
-
+.hamburger-menu{
+    display: none;
+}
 @media screen and (max-width:576px) {
-    
+    .hamburger-menu{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+    }
+    .btn-contact{
+        display: none;
+    }
+    .school-logo h2{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
 }
     
